@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinh diem trung binh</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-3">Class sheet</h1>
+        <form action="#" class="form-group">
+            <div class="mt-3">
+                <label for="name">Họ tên</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mt-3">
+                <label for="math">Điểm toán</label>
+                <input type="number" class="form-control" id="math" name="math">
+            </div>
+            <div class="mt-3">
+                <label for="physical">Điểm lý</label>
+                <input type="number" class="form-control" id="physical" name="physical">
+            </div>
+            <div class="mt-3">
+                <label for="chemistry">Điểm Hóa</label>
+                <input type="number" class="form-control" id="chemistry" name="chemistry">
+            </div>
+        </form>
+        <input type="submit" value="Nhập" onclick="nhap()" class="d-flex m-auto mt-3 btn btn-outline-success"
+            id="nhap"></input><br>
+        <table id="mytable" class="table table-bordered">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Họ tên</th>
+                    <th scope="col">Toán</th>
+                    <th scope="col">Lý</th>
+                    <th scope="col">Hóa</th>
+                    <th scope="col">Trung bình</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        <div class="d-flex flex-column flex-lg-row justify-content-center">
+            <input type="text" value="Tính điểm trung bình" onclick="dtb()"
+                class="mt-3 ms-1 btn btn-outline-success"></input>
+            <input type="text" value="Xác định học sinh giỏi" onclick="hsgioi()"
+                class="mt-3 ms-1 btn btn-outline-success"></input>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
